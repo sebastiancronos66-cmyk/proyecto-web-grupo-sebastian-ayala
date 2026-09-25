@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>proyecto-web-grupo-sebastian-ayala</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
-</body>
+    <body>
+        <section class="contacto" id="contacto">
+
+        <h2>Contáctanos</h2>
+
+        <div class="linea-contacto"></div>
+
+        <form class="formulario-contacto">
+
+            <div class="campo">
+                <label for="nombre">Nombre Completo:</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ingresa tu nombre"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo Electrónico:</label>
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="correo@ejemplo.com"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Mensaje o Requerimiento:</label>
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    placeholder="Escribe tu mensaje aquí..."
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit">
+                Enviar Mensaje
+            </button>
+
+        </form>
+
+        </section>
+
+        <footer class="footer">
+        <p>
+            © 2026 TechNova Studio - Tecnólogo en Análisis y Desarrollo de Software (ADSO) | SENA
+        </p>
+        </footer>
+    </body>
 </html>
