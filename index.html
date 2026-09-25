@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechNovaStudio</title>
-    <link rel="stylesheet" href="/proyecto-web-grupo-sebastian-ayala/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
+    <!-- NAVBAR -->
     <header>
         <nav class="navbar">
             <div class="logo">
@@ -16,15 +18,17 @@
             </div>
 
             <ul class="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Equipo</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
         <div class="contenido">
             <h1>
                 Transformamos Ideas en Software
@@ -38,80 +42,161 @@
                 a la medida.
             </p>
 
-            <a href="#" class="btn">
+            <a href="#servicios" class="btn">
                 Ver Nuestros Servicios
             </a>
         </div>
     </section>
 
-    <section class="servicios">
-  <h2>Nuestros Servicios</h2>
 
-  <div class="servicios-grid">
-    <article class="servicio">
-      <h3>Desarrollo Web</h3>
-      <p>
-        Construcción de aplicaciones web modernas, rápidas,
-        escalables y adaptables a cualquier dispositivo.
-      </p>
-    </article>
+    <!-- SERVICIOS -->
+    <section class="servicios" id="servicios">
+        <h2>Nuestros Servicios</h2>
 
-    <article class="servicio">
-      <h3>Diseño UI/UX</h3>
-      <p>
-        Creación de interfaces intuitivas enfocadas en ofrecer
-        la mejor experiencia de usuario posible.
-      </p>
-    </article>
+        <div class="servicios-grid">
 
-    <article class="servicio">
-      <h3>Bases de Datos</h3>
-      <p>
-        Modelado, optimización y administración de bases de datos
-        relacionales garantizando la seguridad.
-      </p>
-    </article>
-  </div>
-</section>
+            <article class="servicio">
+                <h3>Desarrollo Web</h3>
+                <p>
+                    Construcción de aplicaciones web modernas, rápidas,
+                    escalables y adaptables a cualquier dispositivo.
+                </p>
+            </article>
 
+            <article class="servicio">
+                <h3>Diseño UI/UX</h3>
+                <p>
+                    Creación de interfaces intuitivas enfocadas en ofrecer
+                    la mejor experiencia de usuario posible.
+                </p>
+            </article>
 
-  <section class="section">
-    <h2 class="title">Equipo Desarrollador</h2>
-    <div class="divider"></div>
+            <article class="servicio">
+                <h3>Bases de Datos</h3>
+                <p>
+                    Modelado, optimización y administración de bases de datos
+                    relacionales garantizando la seguridad.
+                </p>
+            </article>
 
-    <div class="grid">
-      <div class="card">
-        <div class="avatar-container">
-          <div class="avatar">
-            <img src="/proyecto-web-grupo-sebastian-ayala/assets/img/Sebastian Ayala.jpeg" alt="Aprendiz 1" class="avatar-image">
-          </div>
         </div>
-        <h3 class="member-name">Sebastian Ayala</h3>
-        <p class="member-role">Líder & Git Master</p>
-      </div>
+    </section>
 
-      <div class="card">
-        <div class="avatar-container">
-          <div class="avatar">🧑‍💻
-            <img src="/proyecto-web-grupo-sebastian-ayala/assets/img/Cristin Carvajal.jpeg" alt="Aprendiz 2" class="avatar-image">
-          </div>
+
+    <!-- EQUIPO -->
+    <section class="section" id="equipo">
+
+        <h2 class="title">Equipo Desarrollador</h2>
+
+        <div class="divider"></div>
+
+        <div class="grid">
+
+            <div class="card">
+                <div class="avatar-container">
+                    <div class="avatar">
+                        <img src="assets/img/Sebastian Ayala.jpeg"
+                            alt="Sebastian Ayala"
+                            class="avatar-image">
+                    </div>
+                </div>
+
+                <h3 class="member-name">Sebastian Ayala</h3>
+                <p class="member-role">Líder & Git Master</p>
+            </div>
+
+
+            <div class="card">
+                <div class="avatar-container">
+                    <div class="avatar">
+                        <img src="assets/img/Cristin Carvajal.jpeg"
+                            alt="Cristin Carvajal"
+                            class="avatar-image">
+                    </div>
+                </div>
+
+                <h3 class="member-name">Cristin Carvajal</h3>
+                <p class="member-role">Frontend Developer</p>
+            </div>
+
+
+            <div class="card">
+                <div class="avatar-container">
+                    <div class="avatar">
+                        <img src="assets/img/Janner Ureña.jpeg"
+                            alt="Janner Ureña"
+                            class="avatar-image">
+                    </div>
+                </div>
+
+                <h3 class="member-name">Janner Ureña</h3>
+                <p class="member-role">CSS & Layout Specialist</p>
+            </div>
+
         </div>
-        <h3 class="member-name">Cristin Carvajal</h3>
-        <p class="member-role">Frontend Developer</p>
-      </div>
+    </section>
 
-      <div class="card">
-        <div class="avatar-container">
-          <div class="avatar">
-          <img src="/proyecto-web-grupo-sebastian-ayala/assets/img/Janner Ureña.jpeg" alt="Aprendiz 3" class="avatar-image">
-          </div>
-        </div>
-        <h3 class="member-name">Janner Ureña</h3>
-        <p class="member-role">CSS & Layout Specialist</p>
-      </div>
-    </div>
-  </section>
 
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto">
+
+        <h2>Contáctanos</h2>
+
+        <div class="linea-contacto"></div>
+
+        <form class="formulario-contacto">
+
+            <div class="campo">
+                <label for="nombre">Nombre Completo:</label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ingresa tu nombre"
+                    required>
+            </div>
+
+
+            <div class="campo">
+                <label for="correo">Correo Electrónico:</label>
+
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="correo@ejemplo.com"
+                    required>
+            </div>
+
+
+            <div class="campo">
+                <label for="mensaje">Mensaje o Requerimiento:</label>
+
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    placeholder="Escribe tu mensaje aquí..."
+                    required></textarea>
+            </div>
+
+
+            <button type="submit">
+                Enviar Mensaje
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>
+            © 2026 TechNova Studio - Tecnólogo en Análisis y Desarrollo de Software (ADSO) | SENA
+        </p>
+    </footer>
 
 </body>
+
 </html>
